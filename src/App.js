@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Country from './components/country';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <h1>Countries</h1>
+
+        {/* Filter will go here  */}
+
+        {/* List countries here  */}
+
+        <Country 
+          name={`Estonia`}
+          continent={`Europe`}
+          flag={`https://www.countryflags.com/wp-content/uploads/estonia-flag-png-large.png`}
+          
+          countrySize={45228}
+        />
+
     </div>
   );
 }
